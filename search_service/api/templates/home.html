@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Please enter the word to search</h2>
+  <form method="get">
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+  </form>
+
+  {% if search_result %}
+    <hr>
+    {% for result in search_result %}
+      <h4>{{ result.show.name }}</h4>
+      <ul>
+          <li>Url: {{ result.show.url }}</li>
+          <li>Type: {{ result.show.type }}</li>
+          <li>Genres: {{ result.show.genres }}</li>
+      </ul>
+    {% endfor %}
+  {% else %}
+    <p><em>No results found</em></p>
+  {% endif %}
+
+{% endblock %}
