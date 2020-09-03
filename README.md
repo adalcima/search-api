@@ -4,6 +4,7 @@ This project provides an API that can be used to search using a search criteria.
 
 ## Developer setup
 
+This project is based on Python3.7, so verify your local python installation to have the same version.
 We can use a virtual environment and install the required packages in order to create the development environment and test the API.
 Follow the steps to prepare your environment:
 1. Create virtualenv
@@ -19,8 +20,9 @@ Follow the steps to prepare your environment:
     pip install -r requirements.txt
     ```
 
-4. Migrate for the first time:
+4. Move to the project folder and migrate for the first time:
     ```
+    cd search_service
     python manage.py migrate
     ```
 
