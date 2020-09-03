@@ -1,11 +1,11 @@
-# Engineer Test
+# Search API
 
 This project provides an API that can be used to search using a search criteria.
 
 ## Developer setup
 
-This project is based on Python3.7, so verify your local python installation to have the same version.
-We can use a virtual environment and install the required packages in order to create the development environment and test the API.
+This project is based on Python3.7 and Django framework, so verify your local python installation to have the same version.
+We can use a virtual environment and install the required packages(Django 3.1.1 included) in order to create the development environment and test the API.
 Follow the steps to prepare your environment:
 1. Create virtualenv
     ```
